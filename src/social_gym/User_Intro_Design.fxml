@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_user_intro" prefHeight="1050.0" prefWidth="1680.0" style="-fx-background-color: #b8e1dd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social_gym.User_Intro_Controller">
+   <children>
+      <BorderPane fx:id="pane_ads" style="-fx-background-color: #060f14; -fx-border-color: #3fb5a6;" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <HBox prefHeight="72.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/gymnatiionlogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lab_time" alignment="TOP_RIGHT" graphicTextGap="20.0" prefHeight="81.0" prefWidth="764.0" text="Time" textFill="#3fb5a6">
+                     <graphic>
+                        <FontAwesomeIconView fill="#044a42" glyphName="CLOCK_ALT" size="3em" />
+                     </graphic>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="900.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="34.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/safisoftgold.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="937.0" prefWidth="1878.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="img_ads" fitHeight="886.0" fitWidth="1654.0" onMouseClicked="#hide_ads_image_to_search_user" pickOnBounds="true">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <image>
+                        <Image url="@../img/gymnatiionlogo_squr.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="pane_logedin" layoutY="4.0" style="-fx-background-color: #060f14; -fx-border-color: #3fb5a6;" styleClass="pane" stylesheets="@CascadeStyleSheet.css" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow height="100.0" radius="49.5" spread="0.3" width="100.0" />
+         </effect>
+         <top>
+            <HBox prefHeight="144.0" prefWidth="1536.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/gymnatiionlogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lab_help_user" alignment="CENTER" graphicTextGap="15.0" prefHeight="94.0" prefWidth="818.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" text="Choose What Workout You Will Do Today" textFill="#ff7c00" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow color="#3fb5a6" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ff7c00" glyphName="INFO_CIRCLE" size="2em" />
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Label>
+                  <JFXButton onAction="#Cancel_Workout" prefHeight="80.0" prefWidth="360.0" style="-fx-background-color: #b71c1c;" styleClass="btn_tl_bl_radius" stylesheets="@CascadeStyleSheet.css" text="CANCEL WORKOUT" textFill="#3fb5a6">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="70.0" top="50.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="34.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/safisoftgold.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="696.0" prefWidth="1146.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane fx:id="pane_chos_arm" onMouseClicked="#Touch_Arm_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_arm.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Arm Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_arm" fitHeight="103.0" fitWidth="74.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_back" layoutX="10.0" layoutY="10.0" onMouseClicked="#Touch_Back_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_back.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Back Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_back" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_legs" layoutX="268.0" layoutY="30.0" onMouseClicked="#Touch_Legs_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="3">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_leg.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Legs Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_legs" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_shoulder" layoutX="30.0" layoutY="30.0" onMouseClicked="#Touch_Shoulder_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="2">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_shoulder.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Shoulder Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_shoulder" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_chest" layoutX="486.0" layoutY="10.0" onMouseClicked="#Touch_Chest_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.rowIndex="1">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_chest.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Chest Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_chest" fitHeight="99.0" fitWidth="74.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_abs" layoutX="10.0" layoutY="358.0" onMouseClicked="#Touch_Abs_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_abs.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Abs Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_abs" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_crossfit" layoutX="248.0" layoutY="358.0" onMouseClicked="#Touch_Crossfit_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_crossfit.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Crossfit Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_crossfit" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pane_chos_cardio" layoutX="486.0" layoutY="358.0" onMouseClicked="#Touch_Cardio_workout_pane" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="21.0" prefHeight="234.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="187.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/anatomy_cardio.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label text="Cardio Workout" textFill="#3fb5a6">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fx:id="img_chos_cardio" fitHeight="99.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.topAnchor="-30.0">
+                                 <image>
+                                    <Image url="@../img/choose_workout.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow level="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <InnerShadow color="#3fb5a6" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="366.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css">
+                     <children>
+                        <Circle fx:id="circle_image_user" fill="#242525" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow color="#b8e1dd" height="30.0" radius="14.5" width="30.0" />
+                           </effect>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Circle>
+                        <Label fx:id="lab_user_name" alignment="CENTER" text="User Name" textFill="#3fb5a6">
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Start Membership Date" textFill="#3fb5a6">
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lab_start_date" layoutX="133.0" layoutY="390.0" text="Start Date" textFill="#ff7c00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="390.0" text="End Membership Date" textFill="#3fb5a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lab_end_date" layoutX="141.0" layoutY="460.0" text="End Date" textFill="#ff7c00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="415.0" text="Membership plane" textFill="#3fb5a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lab_plane" layoutX="161.0" layoutY="530.0" text="plane" textFill="#ff7c00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="440.0" text="Member ID Number" textFill="#3fb5a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lab_member_registration_date" layoutX="132.0" layoutY="600.0" text="ID Number" textFill="#ff7c00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <JFXButton fx:id="btn_StartWorkout" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" disable="true" graphicTextGap="10.0" onAction="#StartWorkout" prefHeight="316.0" prefWidth="364.0" style="-fx-background-color: aquamarine;" styleClass="ok_button_radius_rt_lt" stylesheets="@CascadeStyleSheet.css" text="START WORKOUT">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <effect>
+                        <InnerShadow color="#3fb5a6" />
+                     </effect>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="pane_search_user" style="-fx-background-color: #060f14; -fx-border-color: #3fb5a6;" styleClass="pane" stylesheets="@CascadeStyleSheet.css" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@../img/gymnatiionlogo.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="30.0" top="10.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </top>
+         <bottom>
+            <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@../img/safisoftgold.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="30.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="982.0" prefWidth="1898.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane opacity="0.6" prefHeight="404.0" prefWidth="862.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css">
+                     <children>
+                        <JFXTextArea editable="false" focusColor="#b8e1dd" layoutX="27.0" layoutY="81.0" prefHeight="269.0" prefWidth="802.0" styleClass="jfx-text-field" stylesheets="@CascadeStyleSheet.css" text="ghdfgkjdshhkugviriojhgoidfjoghdfjgoidfjgiojifgfdiio ujg iodfjgoi fuidhg fdghiodf gofihg dfhg hogfoidhgiodf  uiofhg idfoigfd oifghfiod godfhgoifdhgiodf fighfd gfdhgo dfzughfdiouz goiufdu god oz fhdg ifudhgofdg  fiodghiofdz goi fdioghd fiogfio goidfg  fdhgiofd oifdj gdfjgiofdj gifjdg dfiohg dfghifdhgiofjdiogjfdio giodfg dfiogjidfojgofdhgi odofijxcklvzioug89raug zojz ujb[ zlvjiau89 rgufdavjha jojb zioxcfjbfd" unFocusColor="#b8e1dd">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                     <effect>
+                        <InnerShadow color="#3fb5a6" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets bottom="200.0" right="200.0" top="200.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="img_RFID_CARD" fitHeight="398.0" fitWidth="492.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/rfid_card_standbuy.gif" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lab_card_not_accepted" graphicTextGap="20.0" text="Card Not Accepted" textFill="RED" visible="false">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="RED" glyphName="BAN" size="40" />
+                           </graphic>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="100.0" top="100.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="pane_done_workout" prefHeight="1050.0" prefWidth="1680.0" style="-fx-background-color: #060f14; -fx-border-color: #3fb5a6;" styleClass="pane" stylesheets="@CascadeStyleSheet.css" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <HBox prefHeight="72.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/gymnatiionlogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton onAction="#Cancel_Workout" prefHeight="80.0" prefWidth="360.0" style="-fx-background-color: #b71c1c;" styleClass="btn_tl_bl_radius" stylesheets="@CascadeStyleSheet.css" text="CANCEL SGINOUT" textFill="#3fb5a6">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="950.0" top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="34.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/safisoftgold.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="349.0" prefWidth="1458.0" styleClass="button_all_radius" stylesheets="@CascadeStyleSheet.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="239.0" prefWidth="657.0">
+                           <children>
+                              <Circle fx:id="circle_end_traning_user_img" fill="#0f1a25" radius="139.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="465.0" prefWidth="931.0">
+                           <children>
+                              <Label fx:id="lb_end_traning_user_name" alignment="CENTER" prefHeight="61.0" prefWidth="757.0" text="User Name" textAlignment="CENTER" textFill="#3a9188">
+                                 <font>
+                                    <Font name="System Bold" size="45.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="your training time today" textFill="#3a9188">
+                                 <font>
+                                    <Font name="System Bold" size="40.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <GridPane alignment="CENTER" prefHeight="125.0" prefWidth="858.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="592.0" text="Hours" textFill="#3a9188">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="385.0" text="Minutes" textFill="#3a9188" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="339.0" text="Seconds" textFill="#3a9188" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lb_traning_hours" alignment="CENTER" prefHeight="26.0" prefWidth="592.0" text="00" textFill="#b8e1dd" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lb_traning_minutes" alignment="CENTER" prefHeight="26.0" prefWidth="389.0" text="00" textFill="#b8e1dd" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lb_traning_seconds" alignment="CENTER" prefHeight="26.0" prefWidth="369.0" text="00" textFill="#b8e1dd" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="150.0" right="150.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="150.0" right="150.0" />
+                     </VBox.margin>
+                     <effect>
+                        <InnerShadow color="#b8e1dd" />
+                     </effect>
+                  </HBox>
+                  <Label text="how was your training today ?" textFill="#3a9188">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="165.0" prefWidth="1136.0">
+                     <children>
+                        <Label fx:id="lab_rate_0" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#lab_rate_0_click" prefWidth="150.0" text="0%" textAlignment="CENTER" textFill="#212121" wrapText="true">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="ico_rate_0" fill="#212121" glyphName="EMOTICON_SAD" size="80" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lab_rate_20" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#lab_rate_20_click" prefWidth="150.0" text="20%" textAlignment="CENTER" textFill="#212121" wrapText="true">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="ico_rate_20" fill="#212121" glyphName="EMOTICON_NEUTRAL" size="80" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lab_rate_50" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#lab_rate_50_click" prefWidth="150.0" text="50%" textAlignment="CENTER" textFill="#b8e1dd" wrapText="true">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="ico_rate_50" fill="#b8e1dd" glyphName="EMOTICON_HAPPY" size="80" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lab_rate_80" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#lab_rate_80_click" prefWidth="150.0" text="80%" textAlignment="CENTER" textFill="#212121" wrapText="true">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="ico_rate_80" fill="#212121" glyphName="EMOTICON_COOL" size="80" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lab_rate_100" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#lab_rate_100_click" prefWidth="150.0" text="100%" textAlignment="CENTER" textFill="#212121" wrapText="true">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="ico_rate_100" fill="#212121" glyphName="EMOTICON_DEVIL" size="80" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <JFXButton buttonType="RAISED" contentDisplay="RIGHT" graphicTextGap="20.0" onMouseClicked="#EndWorkout" prefHeight="80.0" prefWidth="846.0" ripplerFill="#b8e1dd" style="-fx-background-color: #3a9188;" styleClass="button_all_radius" stylesheets="@CascadeStyleSheet.css" text="See You tomorro" textFill="#b8e1dd">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="#b8e1dd" glyphName="THUMB_UP" size="40" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="pane_membership_end" layoutX="20.0" layoutY="20.0" prefHeight="1050.0" prefWidth="1680.0" style="-fx-background-color: #060f14; -fx-border-color: #3fb5a6;" styleClass="pane" stylesheets="@CascadeStyleSheet.css" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <HBox prefHeight="72.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/gymnatiionlogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton onAction="#Cancel_Workout" prefHeight="80.0" prefWidth="360.0" style="-fx-background-color: #b71c1c;" styleClass="btn_tl_bl_radius" stylesheets="@CascadeStyleSheet.css" text="CANCEL" textFill="#3fb5a6">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="950.0" top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="34.0" prefWidth="1658.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/safisoftgold.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="490.0" prefWidth="1358.0" styleClass="button_all_radius" stylesheets="@CascadeStyleSheet.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="239.0" prefWidth="657.0">
+                           <children>
+                              <Circle fx:id="circle_user_profile_end_membership" fill="#0f1a25" radius="139.0" stroke="BLACK" strokeType="INSIDE" />
+                              <FontAwesomeIconView fill="#b71c1c" glyphName="TIMES" size="150">
+                                 <VBox.margin>
+                                    <Insets right="-200.0" top="-150.0" />
+                                 </VBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="465.0" prefWidth="931.0">
+                           <children>
+                              <Label text="Membership Expired" textFill="#b71c1c">
+                                 <font>
+                                    <Font name="System Bold" size="40.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lab_user_name_end_membership" alignment="CENTER" prefHeight="61.0" prefWidth="757.0" text="User Name" textAlignment="CENTER" textFill="#3a9188">
+                                 <font>
+                                    <Font name="System Bold" size="40.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="816.0">
+                                 <children>
+                                    <Label fx:id="lab_registration_date_end_membership1" layoutX="352.0" layoutY="45.0" text="Registration Date" textFill="#3a9188">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lab_registration_date_end_membership" text=" 2020-12-1" textFill="#ff7c00">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="lab_plan_name_end_membership1" layoutX="368.0" layoutY="39.0" text="Plan Name" textFill="#3a9188">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lab_plan_name_end_membership" text="1 month" textFill="#ff7c00">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="150.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontaw_startdate" fill="#b71c1c" glyphName="EXCLAMATION" size="20" visible="false" />
+                                          <FontAwesomeIconView fill="#009688" glyphName="CALENDAR_CHECK_ALT" size="25">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIconView>
+                                          <Label text="Start Date" textFill="#009688">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="lab_startDate_end_membership" alignment="CENTER" prefHeight="21.0" prefWidth="163.0" text="Date" textFill="#ff7c00" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="307.0" layoutY="10.0" prefHeight="100.0" prefWidth="150.0">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="fontaw_enddate" fill="#b71c1c" glyphName="EXCLAMATION" size="20" visible="false" />
+                                          <FontAwesomeIconView fill="#009688" glyphName="CALENDAR_TIMES_ALT" size="25">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIconView>
+                                          <Label text="End Date" textFill="#009688">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="lab_endDate_end_membership" alignment="CENTER" prefHeight="21.0" prefWidth="287.0" text="Date" textFill="#ff7c00" wrapText="true">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label fx:id="lab_plan_month_end_membership" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="330.0" layoutY="36.0" text="Month" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="25.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="lab_plan_days_end_membership" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Days" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="816.0">
+                                 <children>
+                                    <Label text="Price" textFill="#009688">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="lab_plan_price_end_membership" alignment="CENTER" editable="false" focusColor="#b8e1dd" onKeyPressed="#log_in_on_enter" prefHeight="49.0" prefWidth="196.0" promptText="Price" styleClass="jfx-text-field" stylesheets="@CascadeStyleSheet.css" text="0" unFocusColor="#3a9188">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" right="20.0" />
+                                       </padding>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="150.0" right="150.0" />
+                     </VBox.margin>
+                     <effect>
+                        <InnerShadow color="#b8e1dd" />
+                     </effect>
+                  </HBox>
+                  <Label fx:id="lb_end_traning_user_name11" alignment="CENTER" prefHeight="61.0" prefWidth="757.0" text="Available Plans" textAlignment="CENTER" textFill="#3a9188">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="hbox_member_cards" alignment="CENTER" prefHeight="177.0" prefWidth="1658.0">
+                     <children>
+                        <JFXButton fx:id="btn_previous_card_data" cacheShape="false" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#previous_card_data" prefHeight="596.0" prefWidth="62.0" ripplerFill="#044740c4" styleClass="button_all_radius" stylesheets="@CascadeStyleSheet.css" textFill="TRANSPARENT">
+                           <graphic>
+                              <FontAwesomeIconView fill="#3fb5a6" glyphName="CHEVRON_LEFT" size="30" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <AnchorPane prefHeight="340.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css">
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <children>
+                              <VBox fx:id="vbox_card" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="plan_available_card_lock" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../img/plan_lock.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="-250.0" top="-20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="plan_name_card" text="Member Plane" textFill="#ff7c00">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_month_card" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="330.0" layoutY="36.0" text="Month" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="25.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="plan_days_card" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Days" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_price_card" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Price" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </AnchorPane>
+                        <AnchorPane layoutX="60.0" layoutY="10.0" prefHeight="340.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css">
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <children>
+                              <VBox fx:id="vbox_card1" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="plan_available_card_lock1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../img/plan_lock.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="-250.0" top="-20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="plan_name_card1" text="Member Plane" textFill="#ff7c00">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_month_card1" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="330.0" layoutY="36.0" text="Month" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="25.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="plan_days_card1" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Days" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_price_card1" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Price" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane layoutX="365.0" layoutY="10.0" prefHeight="340.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css">
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <children>
+                              <VBox fx:id="vbox_card11" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="plan_available_card_lock11" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../img/plan_lock.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="-250.0" top="-20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="plan_name_card11" text="Member Plane" textFill="#ff7c00">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_month_card11" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="330.0" layoutY="36.0" text="Month" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="25.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="plan_days_card11" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Days" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_price_card11" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Price" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane layoutX="645.0" layoutY="10.0" prefHeight="340.0" prefWidth="300.0" style="-fx-border-color: #3fb5a6;" stylesheets="@CascadeStyleSheet.css">
+                           <styleClass>
+                              <String fx:value="pane" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                           <children>
+                              <VBox fx:id="vbox_card111" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="plan_available_card_lock111" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../img/plan_lock.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="-250.0" top="-20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="plan_name_card111" text="Member Plane" textFill="#ff7c00">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_month_card111" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="330.0" layoutY="36.0" text="Month" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="25.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="plan_days_card111" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Days" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="816.0">
+                                       <children>
+                                          <Label fx:id="plan_price_card111" layoutX="303.0" layoutY="36.0" text="0" textFill="#ff7c00">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label layoutX="359.0" layoutY="61.0" text="Price" textFill="#009688">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <JFXButton fx:id="btn_next_card_data" cacheShape="false" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#next_card_data" prefHeight="614.0" prefWidth="62.0" ripplerFill="#044740c5" styleClass="button_all_radius" stylesheets="@CascadeStyleSheet.css" textFill="TRANSPARENT">
+                           <graphic>
+                              <FontAwesomeIconView fill="#3fb5a6" glyphName="CHEVRON_RIGHT" size="30" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="pane_done" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="449.0" prefWidth="880.0" styleClass="pane_tranc" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="400.0">
+               <effect>
+                  <Glow level="0.25" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

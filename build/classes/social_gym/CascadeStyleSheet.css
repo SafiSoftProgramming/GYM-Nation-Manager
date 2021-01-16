@@ -1,0 +1,283 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2019, 3:31:49 AM
+    Author     : root
+*/
+
+.button_hover:hover {
+    -fx-background-color:  #b8e1dd;
+    
+    
+}
+
+.button_pressed:pressed {
+    -fx-scale-y: 1.2;
+}
+
+.jfx-text-field, .jfx-password-field   {
+    
+    -fx-text-inner-color:#ff7c00;   
+}
+
+.button_all_radius{
+   -fx-background-color: #060f14;
+ 
+/*   -fx-border-width: 2 ;
+   -fx-border-color:   #3fb5a6 ;*/
+   
+    -fx-border-radius: 50 50 50 50;
+  -fx-background-radius: 50 50 50 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+
+.label_all_radius{
+   -fx-background-color: #044740;
+ 
+/*   -fx-border-width: 2 ;
+   -fx-border-color:   #3fb5a6 ;*/
+   
+    -fx-border-radius: 50 50 50 50;
+  -fx-background-radius: 50 50 50 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+.btn_tl_bl_radius{
+    
+    -fx-background-color: #060f14;
+  
+    -fx-border-radius: 50 0 0 50;
+  -fx-background-radius: 50 0 0 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+
+.pane{
+   -fx-background-color: #060f14;
+ 
+/*   -fx-border-width: 2 ;
+   -fx-border-color:   #3fb5a6 ;*/
+   
+    -fx-border-radius: 50 0 50 50;
+  -fx-background-radius: 50 0 50 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+
+.pane_radius_bot_l_r{
+   -fx-background-color: #060f14;
+ 
+/*   -fx-border-width: 2 ;
+   -fx-border-color:   #3fb5a6 ;*/
+   
+    -fx-border-radius: 0 0 50 50;
+  -fx-background-radius: 0 0 50 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+
+
+.image-view-wrapper:border {
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}
+
+
+.main_pane{
+   -fx-background-color:  #060f14;
+ /*  -fx-border-width: 5 ;
+   -fx-border-color:  #b8e1dd ;*/
+   
+    -fx-border-radius: 50 0 50 50;
+  -fx-background-radius: 50 0 50 50;
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+    
+}
+
+
+.pane_tranc{
+    -fx-background-color: black;
+    -fx-opacity: 0.8 ;
+    -fx-border-color: aquamarine ;
+    -fx-border-width: 7 ;
+    
+ /*  -fx-border-width: 5 ;
+   -fx-border-color:  #b8e1dd ;*/
+   -fx-border-radius: 50 ;
+   -fx-background-radius:50 ;
+    
+}
+
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-unit-increment: 100 ;
+    -fx-block-increment: 200 ;
+}
+
+
+.hover:hover {
+    -fx-scale-y: 1.2;
+    -fx-scale-x:1.2;
+    font-style: oblique ;
+       -fx-border-width: 1 ;
+   -fx-border-color:  #ff7c00 ;
+}
+
+.hover_horz:hover {
+    -fx-scale-y: 1.0;
+    -fx-scale-x:1.0;
+    font-style: oblique ;
+        -fx-border-width: 1 ;
+   -fx-border-color:  #ff7c00 ;
+}
+
+.save_button_radius_rt{
+    
+    -fx-border-radius: 0 0 50 0;
+  -fx-background-radius: 0 0 50 0;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+.save_button_radius_lt{
+    
+  -fx-border-radius: 0 0 0 50;
+  -fx-background-radius: 0 0 0 50;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+.ok_button_radius_rt_lt{
+    
+    -fx-border-radius: 0 0 50 50;
+  -fx-background-radius: 0 0 50 50;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+
+.button_radius_lt_and_rt{
+    
+    -fx-border-radius: 0 0 50 50;
+  -fx-background-radius: 0 0 50 50;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+
+.button_radius_lt_and_rt_top{
+    
+    -fx-border-radius: 50 50 0 0;
+  -fx-background-radius: 50 50 0 0;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+
+.pane_radius_toprt_bottomrt{
+    
+    -fx-border-radius: 0 50 50 0;
+  -fx-background-radius: 0 50 50 0;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+.pane_radius_bottomlft{
+    
+    -fx-border-radius: 0 0 0 50;
+  -fx-background-radius: 0 0 0 50;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+.pane_main_boyyom_rt_radius{
+    
+    -fx-border-radius: 0 0 50 0;
+  -fx-background-radius: 0 0 50 0;
+  
+   /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+
+.jfx-radio-button {
+    -fx-selected-color: yellow;
+    -fx-unselected-color: blue;
+}
+
+.jfx-rippler {
+    -fx-rippler-fill: lime;
+}
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 25;
+   
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view.column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 15;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #3fb5a6;
+    -fx-alignment: CENTER;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:focused {
+    -fx-border-color: derive(-fx-base, 20%);
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #3fb5a6;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-row-cell {
+    -fx-table-cell-border-color: transparent;
+    
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER 
+
+}
+
+
+.jfx-combo-box { 
+    -fx-text-fill: #ff7c00;
+} 
+.jfx-combo-box .cell:selected{ 
+    -fx-background-color: #060f14; -fx-text-fill: #ff7c00; 
+}
+
+

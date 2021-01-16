@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1946.0" prefWidth="1108.0" stylesheets="@CascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="590.0" layoutY="-166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1795.0" prefWidth="1065.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label layoutX="215.0" layoutY="34.0" prefHeight="42.0" prefWidth="568.0" text="Mostafa El Safi" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="215.0" layoutY="165.0" prefHeight="42.0" prefWidth="399.0" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="165.0">
+               <children>
+                  <Label graphicTextGap="10.0" prefHeight="42.0" prefWidth="161.0" text="JAVA Developer">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@5-2-java-png-clipart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="195.0" text="Android Developer">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Android_robot.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="632.0" layoutY="460.0" prefHeight="347.0" prefWidth="538.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="465.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="225.0" prefWidth="558.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints  hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0"  prefHeight="0.0" prefWidth="231.0" text="Java Desktop Applications">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="TELEVISION" size="40" text="" />
+                           </graphic>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0" layoutX="10.0" layoutY="34.0" prefHeight="44.0" prefWidth="219.0" text="JavaFX Desktop Applications" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="LAPTOP" size="40" />
+                           </graphic>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0" layoutX="10.0" layoutY="34.0" prefHeight="0.0" prefWidth="231.0" text="Android Mobile Applications" GridPane.rowIndex="1">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="MOBILE" size="40" />
+                           </graphic>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0" layoutX="10.0" layoutY="166.0" prefHeight="0.0" prefWidth="231.0" text="Microcontroller Programming" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <graphic>
+                              <MaterialDesignIconView fill="#a0d084" glyphName="LED_ON" size="40" text="" />
+                           </graphic>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0" layoutX="10.0" layoutY="166.0" prefHeight="0.0" prefWidth="231.0" text="UI &amp; UX Design" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <graphic>
+                              <MaterialDesignIconView fill="#a0d084" glyphName="PALETTE_ADVANCED" size="40" />
+                           </graphic>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="TOP" graphicTextGap="1.0" layoutX="213.0" layoutY="297.0" prefHeight="2.0" prefWidth="231.0" text="WEB Applications" GridPane.rowIndex="2">
+                           <graphic>
+                              <MaterialDesignIconView fill="#a0d084" glyphName="RESPONSIVE" size="40" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" graphicTextGap="10.0" layoutX="52.0" layoutY="400.0" prefHeight="29.0" prefWidth="126.0" text="WHAT I DO" textAlignment="CENTER" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="887.0" AnchorPane.topAnchor="430.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" graphicTextGap="10.0" layoutX="628.0" layoutY="400.0" prefHeight="29.0" prefWidth="257.0" text="PROFESSIONAL SKILLS" textAlignment="CENTER" AnchorPane.leftAnchor="628.0" AnchorPane.topAnchor="430.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="632.0" layoutY="456.0" prefHeight="1165.0" prefWidth="413.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="465.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label graphicTextGap="10.0" layoutY="36.0" prefHeight="21.0" prefWidth="252.0" text="Programming Languages" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" layoutX="-5.0" layoutY="42.0" prefHeight="250.0" prefWidth="406.0" AnchorPane.topAnchor="42.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="40.0" prefWidth="100.0" text="JAVA">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Java.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="97.0" text="PHP" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@php_PNG3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="58.0" prefHeight="11.0" prefWidth="190.0" progress="0.57" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="37.0" prefWidth="72.0" text="C" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@c-programming.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.47" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="104.0" text="Python" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@python.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.51" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="39.0" prefWidth="134.0" text="JavaScript" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@javascript-icon-png-23.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="229.0" prefHeight="11.0" prefWidth="190.0" progress="0.42" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+                  <Label graphicTextGap="10.0" layoutY="369.0" prefHeight="21.0" prefWidth="391.0" text="Integrated Development Envir.... (IDE)" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="340.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" layoutX="4.0" layoutY="359.0" prefHeight="250.0" prefWidth="406.0" AnchorPane.topAnchor="365.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="40.0" prefWidth="163.0" text="Android Studio">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@android_studio.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="38.0" prefWidth="147.0" text="Netbeans" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@NetBeans-Logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="58.0" prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="37.0" prefWidth="149.0" text="Arduino IDE" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@arduino_22429.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.87" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="104.0" text="Eclipse" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@eclipse-icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.52" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="39.0" prefWidth="134.0" text="Intellij" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@intellij-idea-569199.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="229.0" prefHeight="11.0" prefWidth="190.0" progress="0.42" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+                  <Label graphicTextGap="10.0" layoutX="10.0" layoutY="768.0" prefHeight="21.0" prefWidth="366.0" text="Design Tools" textAlignment="CENTER" AnchorPane.topAnchor="660.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" layoutX="5.0" layoutY="678.0" prefHeight="200.0" prefWidth="406.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="40.0" prefWidth="163.0" text="GNU ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gnu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="38.0" prefWidth="158.0" text="Scene Builder" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sceene.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="58.0" prefHeight="11.0" prefWidth="190.0" progress="0.89" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="37.0" prefWidth="174.0" text="Material Design" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@indroid%20matrial%20des.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="153.0" text="proteus" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Proteus_Design_Suite_Atom_Logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.6" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+                  <Label graphicTextGap="10.0" layoutX="10.0" layoutY="932.0" prefHeight="21.0" prefWidth="366.0" text="Operating System" textAlignment="CENTER" AnchorPane.topAnchor="930.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" text="" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" layoutX="-2.0" layoutY="951.0" prefHeight="200.0" prefWidth="406.0" AnchorPane.topAnchor="951.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="40.0" prefWidth="163.0" text="Linux">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@linux-tux-2-logo-png-transparent.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar prefHeight="11.0" prefWidth="190.0" progress="0.92" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="38.0" prefWidth="158.0" text="Windows" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@windows_logos_PNG25.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="58.0" prefHeight="11.0" prefWidth="190.0" progress="0.8" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="37.0" prefWidth="174.0" text="Android" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@android-logo-png-transparent.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.94" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="153.0" text="ios" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@ios-logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="165.0" prefHeight="11.0" prefWidth="190.0" progress="0.5" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Circle fill="#1f93ff00" layoutX="117.0" layoutY="106.0" radius="80.0" stroke="#a0d084" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.leftAnchor="25.0">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <ImageView fitHeight="210.0" fitWidth="170.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="21.0">
+               <image>
+                  <Image url="@mecv.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" graphicTextGap="10.0" layoutX="103.0" layoutY="916.0" prefHeight="29.0" prefWidth="146.0" text="EDUCATION" textAlignment="CENTER" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="850.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="137.0" layoutY="1059.0" prefHeight="988.0" prefWidth="538.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="885.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <VBox layoutY="23.0" prefHeight="75.0" prefWidth="521.0" AnchorPane.leftAnchor="10.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="36.0" prefWidth="449.0" text="Education" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="DIAMOND" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="BS Computer Science 2011, Arab Academy" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" layoutX="40.0" layoutY="65.0" prefHeight="21.0" prefWidth="473.0" text=" for Science and Technology ." textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="5.0" layoutY="150.0" prefHeight="225.0" prefWidth="579.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-46.0" AnchorPane.topAnchor="125.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="473.0" text="Courses at Arab Academy For Science" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="DIAMOND" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="2.0" prefWidth="298.0" text="and Technology ." textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="JAVA training program 30/3/2016 -30/5/2016" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="480.0" text="JAVA ADVANCED training program 1/2/2017 -3/4/2017" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="ANDROID training program 16/7/2016 -3/9/2016" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="ARDUINO training program 10/2/2017 -31/3/2017" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="494.0" text="Web Development PHP , JS , HTML , CSS  training " textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="413.0" text="program 1/11/2018 -31/1/2019" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="8.0" layoutY="396.0" prefHeight="138.0" prefWidth="531.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="350.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="473.0" text="Courses at One Million Arab Coders" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="DIAMOND" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="0.0" prefWidth="298.0" text="udacity ." textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="Full Stack Developer Track" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="Android Developer Track" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="546.0" prefHeight="159.0" prefWidth="511.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="500.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="34.0" prefWidth="468.0" text="Computer Diploma at National " textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="DIAMOND" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="0.0" prefWidth="351.0" text="Telecommunication Institute ." textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="VB.NET Programming Language" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="413.0" text="Computer Hardware Problem Solving" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="420.0" text="Introduction to Data Structure and Algorithm" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutY="716.0" prefHeight="72.0" prefWidth="350.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="680.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="36.0" prefWidth="449.0" text="Secondary" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="DIAMOND" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="473.0" text="Salah Mostafa High School" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a0d084" glyphName="BULLSEYE" size="15" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" graphicTextGap="10.0" layoutX="692.0" layoutY="1760.0" prefHeight="29.0" prefWidth="202.0" text="HUMAN LANGUAGE" textAlignment="CENTER" AnchorPane.leftAnchor="628.0" AnchorPane.topAnchor="1680.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHEVRON_DOWN" size="15" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="615.0" layoutY="1811.0" prefHeight="150.0" prefWidth="413.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="1715.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <GridPane alignment="CENTER" layoutX="1.0" layoutY="9.0" prefHeight="131.0" prefWidth="406.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="40.0" prefWidth="163.0" text="Arabic ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@ar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar prefHeight="11.0" prefWidth="190.0" progress="1.0" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label graphicTextGap="10.0" prefHeight="38.0" prefWidth="158.0" text="English" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@en.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar layoutX="233.0" layoutY="58.0" prefHeight="11.0" prefWidth="190.0" progress="0.91" styleClass="progresssssssss-bar" stylesheets="@CascadeStyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="659.0" layoutY="123.0" prefHeight="72.0" prefWidth="399.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="123.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label graphicTextGap="10.0" text="MAIL">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ENVELOPE_ALT" size="20" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="SafiSoft.programmer@gmail.com">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label graphicTextGap="10.0" text="WEB">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LAPTOP" size="20" text="" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="facebook.com/SafiSoft.programming">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="49.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label graphicTextGap="10.0" prefHeight="21.0" prefWidth="99.0" text="PHONE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="WHATSAPP" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="01555338815">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label graphicTextGap="10.0" layoutX="215.0" layoutY="102.0" prefHeight="42.0" prefWidth="418.0" text="Software Developer">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dev_ico.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="130.89" radius="64.85749999999999" width="130.54" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

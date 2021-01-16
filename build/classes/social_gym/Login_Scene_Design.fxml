@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #b8e1dd;" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social_gym.Login_Scene_Controller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="88.0" prefHeight="492.0" prefWidth="1066.0" styleClass="main_pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox layoutX="1275.0" layoutY="52.0" prefHeight="983.0" prefWidth="500.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <FontAwesomeIconView fx:id="fonta_lock_icon" glyphName="LOCK" size="10em" text="" textAlignment="CENTER" wrappingWidth="535.5714263916016">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#b8e1dd" offset="0.007407407407407408" />
+                              <Stop color="#3a9188" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill></FontAwesomeIconView>
+                  <Label fx:id="lab_nonet" alignment="CENTER" prefHeight="43.0" prefWidth="582.0" text="No Internet Connection" textAlignment="CENTER" textFill="RED" visible="false">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lab_wrong" alignment="CENTER" prefHeight="43.0" prefWidth="534.0" text="wrong username or password" textAlignment="CENTER" textFill="RED" visible="false">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="tx_username" focusColor="#b8e1dd" labelFloat="true" onKeyPressed="#log_in_on_enter" prefHeight="20.0" prefWidth="500.0" promptText="user name" styleClass="jfx-text-field" stylesheets="@CascadeStyleSheet.css" unFocusColor="#3a9188">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="tx_password" focusColor="#b8e1dd" labelFloat="true" onKeyPressed="#log_in_on_enter" prefHeight="20.0" prefWidth="536.0" promptText="password" styleClass="jfx-password-field" stylesheets="@CascadeStyleSheet.css" unFocusColor="#3a9188">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btn_login" buttonType="RAISED" onAction="#log_in_btn" prefHeight="50.0" prefWidth="566.0" style="-fx-background-color: #3a9188;" text="log in" textAlignment="CENTER" textFill="#b8e1dd">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="100.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <FontAwesomeIconView fx:id="fonta_lock_icon1" glyphName="CREDIT_CARD" size="8em" textAlignment="CENTER" wrappingWidth="534.5714263916016">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#b8e1dd" offset="0.007407407407407408" />
+                              <Stop color="#3a9188" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <VBox.margin>
+                        <Insets top="90.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="660.0" text="you can use ID card to login " textAlignment="CENTER" textFill="#3a9188">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lab_idnot" alignment="CENTER" prefHeight="43.0" prefWidth="584.0" text="ID Reader Not Connected" textAlignment="CENTER" textFill="RED" visible="false">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="restart_btn" graphicTextGap="6.0" onAction="#restart_app" prefHeight="29.0" prefWidth="103.0" text="restart" textFill="#b8e1dd">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="REFRESH" size="1.5em">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#3a9188" />
+                                    <Stop color="#b8e1dd" offset="0.007407407407407408" />
+                                    <Stop color="#3a9188" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </FontAwesomeIconView>
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <InnerShadow color="#3fb5a6" />
+               </effect>
+            </VBox>
+            <ImageView fitHeight="319.0" fitWidth="1113.0" layoutX="58.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="717.0" AnchorPane.topAnchor="70.0">
+               <image>
+                  <Image url="@../img/gymnatiionlogo.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#3fb5a6" radius="17.25" width="50.0" />
+               </effect>
+            </ImageView>
+            <FontAwesomeIconView fx:id="close_fontawesome_icon" fill="#b8e1dd" glyphName="CLOSE" layoutX="80.0" layoutY="80.0" onMouseClicked="#close_btn" size="3em" textAlignment="CENTER" wrappingWidth="33.285715103149414" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Pane layoutX="70.0" layoutY="404.0" opacity="0.6" prefHeight="508.0" prefWidth="1124.0" styleClass="pane" stylesheets="@CascadeStyleSheet.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="710.0">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="308.0" layoutX="20.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/safisoftgold.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextArea editable="false" focusColor="#b8e1dd" layoutX="27.0" layoutY="81.0" prefHeight="309.0" prefWidth="1080.0" styleClass="jfx-text-field" stylesheets="@CascadeStyleSheet.css" text="ghdfgkjdshhkugviriojhgoidfjoghdfjgoidfjgiojifgfdiio ujg iodfjgoi fuidhg fdghiodf gofihg dfhg hogfoidhgiodf  uiofhg idfoigfd oifghfiod godfhgoifdhgiodf fighfd gfdhgo dfzughfdiouz goiufdu god oz fhdg ifudhgofdg  fiodghiofdz goi fdioghd fiogfio goidfg  fdhgiofd oifdj gdfjgiofdj gifjdg dfiohg dfghifdhgiofjdiogjfdio giodfg dfiogjidfojgofdhgi odofijxcklvzioug89raug zojz ujb[ zlvjiau89 rgufdavjha jojb zioxcfjbfd" unFocusColor="#b8e1dd">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextArea>
+               </children>
+               <effect>
+                  <InnerShadow color="#3fb5a6" />
+               </effect>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow height="100.0" radius="49.5" spread="0.3" width="100.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
